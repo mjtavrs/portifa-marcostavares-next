@@ -12,7 +12,7 @@ const config: Config = {
       },
       gridTemplateColumns: {
         portfolioSection:
-          'minmax(9rem, 18rem) minmax(9rem, 18rem) minmax(9rem, 18rem)',
+          'minmax(10rem, 20rem) minmax(10rem, 20rem) minmax(10rem, 20rem)',
       },
     },
   },

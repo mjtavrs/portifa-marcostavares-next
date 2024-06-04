@@ -1,5 +1,5 @@
 import { Logo } from './Logo'
-import { BiLogoTypescript } from 'react-icons/bi'
+import { PortfolioSection } from './PortfolioSection'
 
 export default function Home() {
   return (
@@ -27,46 +27,10 @@ export default function Home() {
           Let&apos;s Talk.
         </button>
       </nav>
-      <section className="flex flex-col items-center gap-8 px-5">
-        <div className="flex flex-col">
-          <div className="flex flex-col items-center">
-            <span className="relative inline-block before:absolute before:-inset-1 before:bottom-1 before:top-4 before:block before:-skew-y-3 before:bg-portifa-yellow">
-              <h2 className="relative text-3xl font-semibold text-portifa-grey-900">
-                Skills.
-              </h2>
-            </span>
-          </div>
-          <p className="font-medium">
-            Here&apos;s the list of my current abilities.
-          </p>
-        </div>
-        <div className="grid grid-cols-portfolioSection gap-4">
-          <div className="flex items-center rounded-lg bg-portifa-grey-100 px-4 py-3">
-            <div>
-              <BiLogoTypescript className="text-3xl" />
-            </div>
-            <div className="flex-1 text-center font-medium">
-              <p>TypeScript</p>
-            </div>
-          </div>
-          <div className="flex items-center rounded-lg bg-portifa-grey-100 px-4 py-3">
-            <div>
-              <BiLogoTypescript className="text-3xl" />
-            </div>
-            <div className="flex-1 text-center font-medium">
-              <p>TypeScript</p>
-            </div>
-          </div>
-          <div className="flex items-center rounded-lg bg-portifa-grey-100 px-4 py-3">
-            <div>
-              <BiLogoTypescript className="text-3xl" />
-            </div>
-            <div className="flex-1 text-center font-medium">
-              <p>TypeScript</p>
-            </div>
-          </div>
-        </div>
-      </section>
+      <PortfolioSection
+        title="Skills"
+        description="Here's the list of the tools I use to create my projects."
+      />
     </>
   )
 }

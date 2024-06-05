@@ -1,5 +1,5 @@
 // import { ReactNode } from 'react'
-import { PortfolioSectionSkills } from './PortfolioSectionSkills'
+import { SkillsSectionRoot } from './PortfolioSectionSkills/SkillsSectionRoot'
 
 interface PortfolioSectionProps {
   title: string
@@ -22,7 +22,7 @@ export function PortfolioSection({
         </div>
         <p className="font-medium">{description}</p>
       </div>
-      <PortfolioSectionSkills />
+      <SkillsSectionRoot />
     </section>
   )
 }

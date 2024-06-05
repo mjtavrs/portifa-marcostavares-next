@@ -1,5 +1,5 @@
 import { Logo } from './Logo'
-import { PortfolioSection } from './PortfolioSection'
+import { PortfolioSection } from './components/PortfolioSection'
 
 export default function Home() {
   return (

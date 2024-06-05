@@ -14,6 +14,8 @@ import {
   BiLogoMongodb,
 } from 'react-icons/bi'
 
+import { SkillsItem } from './SkillsItem'
+
 export const skills = [
   {
     id: 1,
@@ -91,3 +93,17 @@ export const skills = [
     title: 'Jest',
   },
 ]
+
+export function Skills() {
+  return (
+    <>
+      {skills.map((skill) => (
+        <SkillsItem
+          key={skill.id}
+          skillIcon={skill.icon}
+          skillTitle={skill.title}
+        />
+      ))}
+    </>
+  )
+}

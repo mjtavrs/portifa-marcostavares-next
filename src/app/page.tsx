@@ -1,5 +1,7 @@
 import { Logo } from './Logo'
-import { PortfolioSection } from './components/PortfolioSection'
+import { Skills } from './components/PortfolioSectionSkills/Skills'
+import { Section } from './components/Section'
+import { SectionRoot } from './components/SectionRoot'
 
 export default function Home() {
   return (
@@ -8,13 +10,10 @@ export default function Home() {
         <Logo />
         <ul className="flex gap-5">
           <li>
-            <a href="#">Services</a>
-          </li>
-          <li>
             <a href="#">Skills</a>
           </li>
           <li>
-            <a href="#">Projects</a>
+            <a href="#">Portfolio</a>
           </li>
           <li>
             <a href="#">Qualifications</a>
@@ -27,10 +26,14 @@ export default function Home() {
           Let&apos;s Talk.
         </button>
       </nav>
-      <PortfolioSection
+      <Section
         title="Skills"
         description="Here's the list of the tools I use to create my projects."
-      />
+      >
+        <SectionRoot>
+          <Skills />
+        </SectionRoot>
+      </Section>
     </>
   )
 }

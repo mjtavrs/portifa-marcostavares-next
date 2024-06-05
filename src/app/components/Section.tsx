@@ -1,15 +1,12 @@
-// import { ReactNode } from 'react'
-import { SkillsSectionRoot } from './PortfolioSectionSkills/SkillsSectionRoot'
+import { ReactNode } from 'react'
 
-interface PortfolioSectionProps {
+interface SectionProps {
   title: string
   description?: string
+  children: ReactNode
 }
 
-export function PortfolioSection({
-  title,
-  description,
-}: PortfolioSectionProps) {
+export function Section({ title, description, children }: SectionProps) {
   return (
     <section className="flex flex-col items-center gap-8 px-5">
       <div className="flex flex-col">
@@ -22,7 +19,7 @@ export function PortfolioSection({
         </div>
         <p className="font-medium">{description}</p>
       </div>
-      <SkillsSectionRoot />
+      {children}
     </section>
   )
 }

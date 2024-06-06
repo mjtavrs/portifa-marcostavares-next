@@ -1,7 +1,8 @@
 import { Logo } from './Logo'
-import { Skills } from './components/PortfolioSectionSkills/Skills'
+import { Skills } from './components/Sections/PortfolioSectionSkills/Skills'
 import { SectionRoot } from './components/SectionRoot'
 import { SectionWrapper } from './components/SectionWrapper'
+import { ProjectsItem } from './components/Sections/PortfolioSectionProjects/ProjectsItem'
 
 export default function Home() {
   return (
@@ -29,7 +30,7 @@ export default function Home() {
       <div className="space-y-20">
         <SectionRoot
           title="Skills"
-          description="Here's the list of the tools I use to create my projects."
+          description="Here's the list of the tools I've studied and used to create some of my projects."
         >
           <SectionWrapper>
             <Skills />
@@ -37,13 +38,14 @@ export default function Home() {
         </SectionRoot>
         <SectionRoot
           title="Portfolio"
-          description="Oh, you curious to see how I used these skills? Here are the projects that I created or participated so far. 😄"
+          description="Oh, you curious to see how I used these skills? Here are the projects that I created or participated so far."
         >
           <SectionWrapper>
-            <Skills />
+            <ProjectsItem />
           </SectionWrapper>
         </SectionRoot>
       </div>
+      <div className="pb-40"></div>
     </>
   )
 }

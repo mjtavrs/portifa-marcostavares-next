@@ -17,7 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${rubik.className} bg-portifa-beige text-portifa-grey-900 min-h-dvh`}
+        className={`${rubik.className} min-h-dvh bg-portifa-beige text-portifa-grey-900`}
       >
         {children}
       </body>

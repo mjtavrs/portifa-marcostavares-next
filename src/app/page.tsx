@@ -1,7 +1,7 @@
 import { Logo } from './Logo'
 import { Skills } from './components/PortfolioSectionSkills/Skills'
-import { Section } from './components/Section'
 import { SectionRoot } from './components/SectionRoot'
+import { SectionWrapper } from './components/SectionWrapper'
 
 export default function Home() {
   return (
@@ -26,14 +26,24 @@ export default function Home() {
           Let&apos;s Talk.
         </button>
       </nav>
-      <Section
-        title="Skills"
-        description="Here's the list of the tools I use to create my projects."
-      >
-        <SectionRoot>
-          <Skills />
+      <div className="space-y-20">
+        <SectionRoot
+          title="Skills"
+          description="Here's the list of the tools I use to create my projects."
+        >
+          <SectionWrapper>
+            <Skills />
+          </SectionWrapper>
         </SectionRoot>
-      </Section>
+        <SectionRoot
+          title="Portfolio"
+          description="Oh, you curious to see how I used these skills? Here are the projects that I created or participated so far. 😄"
+        >
+          <SectionWrapper>
+            <Skills />
+          </SectionWrapper>
+        </SectionRoot>
+      </div>
     </>
   )
 }

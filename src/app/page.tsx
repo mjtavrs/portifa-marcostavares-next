@@ -1,8 +1,8 @@
 import { Logo } from './Logo'
 import { Skills } from './components/Sections/PortfolioSectionSkills/Skills'
+import { Projects } from './components/Sections/PortfolioSectionProjects/Projects'
 import { SectionRoot } from './components/SectionRoot'
 import { SectionWrapper } from './components/SectionWrapper'
-import { ProjectsItem } from './components/Sections/PortfolioSectionProjects/ProjectsItem'
 
 export default function Home() {
   return (
@@ -41,7 +41,7 @@ export default function Home() {
           description="Oh, you curious to see how I used these skills? Here are the projects that I created or participated so far."
         >
           <SectionWrapper>
-            <ProjectsItem />
+            <Projects />
           </SectionWrapper>
         </SectionRoot>
       </div>

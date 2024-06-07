@@ -1,94 +1,58 @@
-import { FaSass, FaReact, FaNode, FaGitAlt, FaGithub } from 'react-icons/fa6'
-import { DiPostgresql } from 'react-icons/di'
+import { FaReact, FaGitAlt } from 'react-icons/fa6'
+import { TbFileTypeSql } from 'react-icons/tb'
 import {
   SiStyledcomponents,
-  SiVite,
   SiNextdotjs,
   SiExpress,
-  SiSqlite,
   SiJest,
 } from 'react-icons/si'
-import {
-  BiLogoTypescript,
-  BiLogoTailwindCss,
-  BiLogoMongodb,
-} from 'react-icons/bi'
+import { BiLogoTypescript, BiLogoTailwindCss } from 'react-icons/bi'
 
 import { SkillsItem } from './SkillsItem'
 
-export const skills = [
+const skills = [
   {
     id: 1,
-    icon: <FaSass />,
-    title: 'Sass',
-  },
-  {
-    id: 2,
     icon: <BiLogoTailwindCss />,
     title: 'Tailwind CSS',
   },
   {
-    id: 3,
+    id: 2,
     icon: <SiStyledcomponents />,
     title: 'Styled Components',
   },
   {
-    id: 4,
+    id: 3,
     icon: <BiLogoTypescript />,
     title: 'TypeScript',
   },
   {
-    id: 5,
+    id: 4,
     icon: <FaReact />,
     title: 'React',
   },
   {
-    id: 6,
-    icon: <SiVite />,
-    title: 'Vite',
-  },
-  {
-    id: 7,
+    id: 5,
     icon: <SiNextdotjs />,
     title: 'Next.js',
   },
   {
-    id: 8,
-    icon: <FaNode />,
-    title: 'Node.js',
-  },
-  {
-    id: 9,
+    id: 6,
     icon: <SiExpress />,
     title: 'Express',
   },
   {
-    id: 10,
-    icon: <BiLogoMongodb />,
-    title: 'MongoDB',
+    id: 7,
+    icon: <TbFileTypeSql />,
+    title: 'SQL',
   },
   {
-    id: 11,
-    icon: <SiSqlite />,
-    title: 'SQLite',
-  },
-  {
-    id: 12,
-    icon: <DiPostgresql />,
-    title: 'PostgreSQL',
-  },
-  {
-    id: 13,
+    id: 8,
     icon: <FaGitAlt />,
     title: 'Git',
   },
   {
-    id: 14,
-    icon: <FaGithub />,
-    title: 'Github',
-  },
-  {
-    id: 15,
+    id: 9,
     icon: <SiJest />,
     title: 'Jest',
   },

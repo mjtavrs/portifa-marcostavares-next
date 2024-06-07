@@ -7,7 +7,7 @@ interface SkillsItemProps {
 
 export function SkillsItem({ skillIcon, skillTitle }: SkillsItemProps) {
   return (
-    <div className="flex items-center rounded-lg bg-portifa-grey-100 px-5 py-4">
+    <div className="flex items-center rounded-lg bg-stone-200 px-5 py-4">
       <div>
         <span className="text-3xl">{skillIcon}</span>
       </div>

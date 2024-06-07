@@ -4,11 +4,13 @@ import { Projects } from './components/Sections/PortfolioSectionProjects/Project
 import { SectionRoot } from './components/SectionRoot'
 import { SectionWrapper } from './components/SectionWrapper'
 
+import { FaGithub, FaLinkedin, FaMedium } from 'react-icons/fa6'
+
 export default function Home() {
   return (
     <>
       <nav className="flex items-center justify-between px-5 pt-3">
-        <Logo />
+        <Logo color="#232122" height={60} width={110} />
         <ul className="flex gap-5">
           <li>
             <a href="#">Skills</a>
@@ -45,7 +47,26 @@ export default function Home() {
           </SectionWrapper>
         </SectionRoot>
       </div>
-      <div className="pb-40"></div>
+      <div className="mt-40 bg-portifa-grey-900 text-portifa-beige">
+        <Logo color="#f2efe6" height={120} width={170} />
+        <ul>
+          <li>
+            <a href="http://" target="_blank">
+              <FaGithub />
+            </a>
+          </li>
+          <li>
+            <a href="http://" target="_blank">
+              <FaLinkedin />
+            </a>
+          </li>
+          <li>
+            <a href="http://" target="_blank">
+              <FaMedium />
+            </a>
+          </li>
+        </ul>
+      </div>
     </>
   )
 }

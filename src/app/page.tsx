@@ -3,8 +3,7 @@ import { Skills } from './components/Sections/PortfolioSectionSkills/Skills'
 import { Projects } from './components/Sections/PortfolioSectionProjects/Projects'
 import { SectionRoot } from './components/SectionRoot'
 import { SectionWrapper } from './components/SectionWrapper'
-
-import { FaGithub, FaLinkedin, FaMedium } from 'react-icons/fa6'
+import { Footer } from './Footer'
 
 export default function Home() {
   return (
@@ -25,7 +24,7 @@ export default function Home() {
             <a href="#">Curriculum</a>
           </li>
         </ul>
-        <button className="rounded-full bg-portifa-yellow px-6 py-1 font-semibold">
+        <button className="rounded-full bg-amber-400 px-6 py-1 font-semibold">
           Let&apos;s Talk.
         </button>
       </nav>
@@ -47,26 +46,7 @@ export default function Home() {
           </SectionWrapper>
         </SectionRoot>
       </div>
-      <div className="mt-40 bg-portifa-grey-900 text-portifa-beige">
-        <Logo color="#f2efe6" height={120} width={170} />
-        <ul>
-          <li>
-            <a href="http://" target="_blank">
-              <FaGithub />
-            </a>
-          </li>
-          <li>
-            <a href="http://" target="_blank">
-              <FaLinkedin />
-            </a>
-          </li>
-          <li>
-            <a href="http://" target="_blank">
-              <FaMedium />
-            </a>
-          </li>
-        </ul>
-      </div>
+      <Footer />
     </>
   )
 }
